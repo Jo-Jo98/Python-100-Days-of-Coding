@@ -1,0 +1,40 @@
+#Print Function
+#Write a program in main.py that prints the same notes from the previous lesson using what you have learnt 
+#about the Python print function.
+
+print("Day 1 - Python Print Function")
+print("The function is declared like this:")
+print("print('what to print')")
+
+******************************************************************************************
+
+#Debugging
+#Look at the code in the code editor on the right. There are errors in all of the lines of code. 
+#Fix the code so that it runs without errors.
+
+#Results
+#Line 1 - No " in the beginning.
+#Line 2 - Use ' rather than " at the beginning & end of string as the " need to be printed next to + sign.
+#Line 3 - Incorrect indentation - bring word Print back in line.
+#Line 4 - Remove double (.
+
+print("Day 1 - String Manipulation")
+print('String Concatenation is done with the "+" sign.')
+print('e.g. print("Hello " + "world")')
+print("New lines can be created with a backslash and n.")
+
+******************************************************************************************
+
+#Input Functions
+#Write a program that prints the number of characters in a user's name. 
+#Your program should work for different inputs. e.g. any name that you input.
+
+#Results
+#Create a variable called my_name and assign it as an input.
+#Print the variable but use the function len to count the caracters for output.
+
+print("What is your name?")
+my_name = input()
+print(len(my_name))
+
+*****************************************************************************************
