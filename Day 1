@@ -41,6 +41,10 @@ print(len(my_name))
 #Input run first - passed to len function - which then gets printed
 #Download Thonny to see how code gets executed.
 
+my_name = input("What is your name? ")
+length = len(my_name)
+print (length)
+
 print(len(input("What is your name? ")))
 
 *****************************************************************************************
