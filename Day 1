@@ -37,6 +37,11 @@ print("What is your name?")
 my_name = input()
 print(len(my_name))
 
+#Better code
+#input run first - passed to len function - which then get printed
+
+print(len(input("What is your name? ")))
+
 *****************************************************************************************
 
 #Instructions
