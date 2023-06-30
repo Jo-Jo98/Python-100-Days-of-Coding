@@ -74,3 +74,13 @@ a = var2
 
 print("a: " + a)
 print("b: " + b)
+
+***********************************************************************************************
+
+#Band Name Generator
+
+print("What is your name?")
+your_name = input()
+print("Which city are your from?")
+your_city = input()
+print ('Your band name could be' + ' - ' + (your_name + " " + your_city))
