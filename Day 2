@@ -6,7 +6,7 @@ two_digit_number = input("Type a two-digit number: ")
 
 ####################################
 #Write your code below this line 👇
-#print (two_digit_number[0])
+#print (type(two_digit_number))
 number = (two_digit_number[0])
 number2 = (two_digit_number[1])
 num1 = (int(number))
@@ -17,6 +17,20 @@ print ((num1)+(num2))
 #The string first had to be split - each part of the string saved in a new variable 
 #The new variable was then passed through to convert it to a number (integer)
 #Adding up the integer gives the number required
+
+Better Code
+
+# 🚨 Don't change the code below 👇
+two_digit_number = input("Type a two-digit number: ")
+# 🚨 Don't change the code above 👆
+
+####################################
+#Write your code below this line 👇
+#print (type(two_digit_number))
+number = int(two_digit_number[0])
+number2 = int(two_digit_number[1])
+New_num = number + number2
+print (New_num)
 **************************************************************************************************************************
 
 Write a program that calculates the Body Mass Index (BMI) from a user's weight and height.
@@ -48,9 +62,37 @@ print (BMI)
 #Carry out calculations according to the formula
 #Turn the answer back into an integer which will make it a whole number
 
+Better Code
+
+# 🚨 Don't change the code below 👇
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+#print (type(height))
+#print (type(weight))
+height_int = (float(height))
+weight_int = (float(weight))
+#print (type(height_int))
+#print (type(weight_int))
+BMI_cal = weight_int / (height_int ** 2)
+#print (BMI_cal)
+BMI = int(BMI_cal)
+print (BMI)
+
+#Using ** is = to the power of x (in this case - to the power of 2)
+
+#PRIORITY = PEMDAS = Parentheses (), Exponents **, Multiplication *, Division /, Addition +, Substractions -
+
+#Better Code
+
+bmi = int(weight) / float(height) ** 2
+bmi_int = int(bmi)
+print (bmi)
 ******************************************************************************************************************************************
 
-Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
+Create a program using maths and f-Strings that tells us how many days, weeks, and months we have left if we live until 90 years old.
 It will take your current age as the input and output a message with our time left in this format:
 You have x days, y weeks, and z months left.
 Where x, y and z are replaced with the actual calculated numbers.
@@ -85,6 +127,26 @@ print ("You have " + (x) + " days, " + (y) + " weeks, and " + (z) + " months lef
 #Multiply the number of years left with 52 to calculate the number of weeks left - convert into a string and saved as variable y
 #Multiply the number of years left with 365 to calculate the number of days left - convert into a string and saved as variable x
 #Create a print statement to import all the calculated variables 
+
+#Better Code
+
+#f-String
+
+# 🚨 Don't change the code below 👇
+age = input("What is your current age? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+age_int = (int(age))
+death = 90
+
+years_left = death - age_int
+z = (years_left * 12)
+y = (years_left * 52)
+x = (years_left * 365)
+
+
+print (f"You have {x} days, {y} weeks, and {z} months left.")
 
 **************************************************************************************************************************************************
 Tip Calculator
