@@ -50,4 +50,73 @@ print (BMI)
 
 ******************************************************************************************************************************************
 
+Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
+It will take your current age as the input and output a message with our time left in this format:
+You have x days, y weeks, and z months left.
+Where x, y and z are replaced with the actual calculated numbers.
 
+Warning your output should match the Example Output format exactly, even the positions of the commas and full stops.
+
+# 🚨 Don't change the code below 👇
+age = input("What is your current age? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+age_int = (int(age))
+death = 90
+
+years_left = death - age_int
+z = (str(years_left * 12))
+#print (z)
+
+y = (str(years_left * 52))
+#print (y)
+
+x = (str(years_left * 365))
+#print (x)
+
+print ("You have " + (x) + " days, " + (y) + " weeks, and " + (z) + " months left.")
+
+#Age input variable is recorded as a string
+#Convert age into an integer called age_int
+#Set the death age to 90
+#Calculate how many years are left by subtracting the age from the death date
+#Multiply the number of years left with 12 to get the total amount of months remaining and convert it into a string and save it as variable z
+#Multiply the number of years left with 52 to calculate the number of weeks left - convert into a string and saved as variable y
+#Multiply the number of years left with 365 to calculate the number of days left - convert into a string and saved as variable x
+#Create a print statement to import all the calculated variables 
+
+**************************************************************************************************************************************************
+Tip Calculator
+
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+
+#Write your code below this line 👇
+
+Bill_amount = input("What is the total bill amount? ")
+Tip_amount = input("What % tip do you want to give? ")
+Split_amount = input("How many people is the bill split between? ")
+
+Bill_amount_float = float(Bill_amount)
+Tip_amount_float = float(Tip_amount)
+Split_amount_float = float(Split_amount)
+
+Total_bill = ((Bill_amount_float * Tip_amount_float)/100) + (Bill_amount_float)
+
+Total_split = (Total_bill / Split_amount_float)
+Total_split_round = round(Total_split, 2)
+Total_split_str = str(Total_split_round)
+
+print ("Each person should pay: " + (Total_split_str))
+
+#Customer enters the total bill amount into variable Bill_amount - this is saved as a string variable
+#Customer enters the % tip they wish to pay - input is saved as a string variable
+#Customer enters the number of people the bill will be split amongst - data is saved as a string variable
+#Input needs to be converted into floats
+#Calculate the Total bill to be split by adding the tip amount to the total bill
+#Devide the total amount by the number of customers paying
+#Round the amount to 2 decimal places.
+#Convert the float back into a string
+#Print the amount each person should pay
