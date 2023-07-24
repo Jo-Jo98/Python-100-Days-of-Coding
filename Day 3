@@ -31,6 +31,34 @@ else:
 #Warning you should round the result to the nearest whole number. The interpretation message needs to include the words in bold from the interpretations above. 
 #e.g. underweight, normal weight, overweight, obese, clinically obese.
 
+# 🚨 Don't change the code below 👇
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+BMI_cal = weight/ (height ** 2) 
+#print(f"{weight} % ({height} x {height}) = {BMI_cal}")
+BMI_whole_num = round(BMI_cal)
+
+if BMI_cal > 35:
+    print(f"Your BMI is {BMI_whole_num}, you are clinically obese.")
+else:
+        if BMI_cal >= 30:
+            print(f"Your BMI is {BMI_whole_num}, you are obese.")
+        else:
+                if BMI_cal >= 25:
+                 print(f"Your BMI is {BMI_whole_num}, you are slightly overweight.")
+                else:
+                     if BMI_cal < 18.5:
+                        print(f"Your BMI is {BMI_whole_num}, you are under weight.")
+                     else:
+                        print(f"Your BMI is {BMI_whole_num}, you have a normal weight.")
+
+#Using nested if statements, we can generate multiple outcomes.
+
+*********************************************************************************************************************************************************************
+
 
 
 
