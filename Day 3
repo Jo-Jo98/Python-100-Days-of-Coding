@@ -57,6 +57,26 @@ else:
 
 #Using nested if statements, we can generate multiple outcomes.
 
+##Better Code##
+
+# 🚨 Don't change the code below 👇
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+bmi = round(weight / height ** 2)
+if bmi < 18.5:
+  print(f"Your bmi is {bmi}, you are underweight.")
+elif bmi > 25:
+  print(f"Your bmi is {bmi}, you have a normal weight.")
+elif bmi < 30:
+  print(f"Your bmi is {bmi}, you are overweight.")
+elif bmi < 35:
+  pring(f"Your bmi is {bmi}, you are obese.")
+else:
+  print(f"Your bmi is {bmi}, you are clinically obese.") 
+
 *********************************************************************************************************************************************************************
 
 #Write a program that works out whether a given year is a leap year. A normal year has 365 days, and leap years have 366, with an extra day in February.
@@ -97,8 +117,27 @@ else:
 
 
 #With this exercise, I found it easier to start at the bottom of the flow chart and write the if statements.
-#The % is used to see if a number is divisable by a number. For more information, check the link below.
+#The % is used to see if a number is divisible by a number. For more information, check the link below.
 #https://www.toppr.com/guides/python-guide/examples/python-examples/functions/number-divisible/python-program-find-numbers-divisible-another-number/#:~:text=num%20%3D%20int%20(input%20(%E2%80%9C,number%20is%20not%20divisible.%E2%80%9D)
+
+##Better Code##
+
+# 🚨 Don't change the code below 👇
+year = int(input("Which year do you want to check? "))
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+if year % 4 == 0:
+  if year % 100 == 0:
+   if year % 400 == 0:
+    print("Leap year")
+   else:
+    print("Not leap year")
+  else:
+   print("Leap year")
+else:
+  print("Not leap year")
 
 ***********************************************************************************************************************************************************************************************************************************************
 
