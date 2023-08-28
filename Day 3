@@ -209,3 +209,69 @@ if extra_cheese == "Y":
     bill += 1
 
 print(f"Your final bill is ${bill}")
+
+***********************************************************************************************************************************
+
+#Love Calculator
+
+You are going to write a program that tests the compatibility between two people.
+To work out the love score between two people:
+
+Take both people's names and check for the number of times the letters in the word TRUE occur. 
+Then check for the number of times the letters in the word LOVE occur. 
+Then combine these numbers to make a 2-digit number.
+
+For Love Scores less than 10 or greater than 90, the message should be:
+"Your score is **x**, you go together like coke and mentos."
+
+For Love Scores between 40 and 50, the message should be:
+"Your score is **y**, you are alright together."
+
+Otherwise, the message will just be their score. e.g.:
+"Your score is **z**."
+
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+# Concatenate the two names and change the names into lowercase so that proper validation and count can be carried out. 
+str1 = name1.lower()+name2.lower()
+
+#Count each specific letter in the string and save the number in its variable.
+var_t = str1.count('t')
+var_r = str1.count('r')
+var_u = str1.count('u')
+var_e = str1.count('e')
+
+#Add all the numbers together and save them in a new variable. 
+num_true_total = var_t + var_r + var_u + var_e
+#Convert the number into a string.
+num_true_total =str(num_true_total)
+
+#Count each specific letter in the string and save the number in its variable. We have already done "e" so no need to 
+#calculate it again.
+var_l = str1.count('l')
+var_o = str1.count('o')
+var_v = str1.count('v')
+
+#Add all the numbers together and save them in a new variable.
+love_total = var_l + var_o + var_v + var_e
+#Convert the number into a string.
+love_total = str(love_total)
+#Because both numbers are now saved as a string/text, we can concatenate them and save them into a new variable
+true_love = (num_true_total) + (love_total)
+#Again we need to change the string back into a number which would allow us to see if set criteria is met.
+num_true_love =int(true_love)
+
+if num_true_love < 10 or num_true_love > 90:
+    print(f"Your score is {num_true_love}, you go together like coke and mentos.")
+elif num_true_love > 40 and num_true_love < 50 :
+    print(f"Your score is {num_true_love}, you are alright together.")
+else:
+    print(f"Your score is {num_true_love}.") 
+
+
