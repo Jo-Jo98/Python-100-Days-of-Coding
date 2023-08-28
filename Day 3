@@ -141,3 +141,71 @@ else:
 
 ***********************************************************************************************************************************************************************************************************************************************
 
+#Rollercoaster Ticket System
+
+print("Welcome to the Rollercoaster!")
+#Request the height in cm and save it as an integer in the variable height.
+#Create a variable called bill and assign the value of 0
+
+height = int(input("What is your height in cm? "))
+bill = 0
+
+if height >= 120:
+    print("You can ride the rollercoaster!")
+    age = int(input("What is your age? "))
+    if age < 12:
+        bill = 5
+        print("Child ticket are $5.")
+    elif age <= 18:
+        bill = 7
+        print("Youth tickets are $7.")
+    else:
+        bill = 12
+        print("Adult tickets are $12.")
+    
+    wants_photo = input("Do you want a photo? Y or N. ")
+    
+    if wants_photo == "Y" or "y":
+        # Add $3 to the bill
+        #bill = bill + 3 
+        bill += 3
+        
+    print(f"Your final bill is {bill}")
+    
+else:
+    print("Sorry, you have to grow taller before you can ride.")
+
+***************************************************************************************************************************
+
+Pizza Ordering
+
+# 🚨 Don't change the code below 👇
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+# Create a variable place holder colled bill
+bill = 0
+
+if size == "S":
+    bill += 15
+elif size == "M":
+    bill += 20
+elif size == "L":
+    bill += 25
+else:
+    print("Please only select the options available")
+
+if add_pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+
+if extra_cheese == "Y":
+    bill += 1
+
+print(f"Your final bill is ${bill}")
