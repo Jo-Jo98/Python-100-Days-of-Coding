@@ -274,4 +274,110 @@ elif num_true_love > 40 and num_true_love < 50 :
 else:
     print(f"Your score is {num_true_love}.") 
 
+****************************************************************************************************************************
 
+Treasure Island
+
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+score = 0
+print("")
+print("You don't have much time!!")
+print("")
+print("You have 3 choices - run ahead, turn left or turn right.")
+print("")
+print("Option 1 - Going straight ahead into the thick jungle")
+print("Option 2 - Run to your left which leads to some caves")
+print("Option 3 - Run to your right which leads to an abandoned village")
+print("")
+
+player1 = int(input("Please enter which option number you choose."))
+
+if player1 == 2:
+    score+=1
+    print("")
+    print("Good choice! Let's get to the caves!")
+    print("")
+    print("The caves were a good choice! We have 2 options again!")
+    print("High tide is coming in fast!")
+    print("")
+    print("Option 1 - Jump off the cliff and swim around.")
+    print("Option 2 - Try and reason with the Pirates.")
+    print("Option 3 - Wait and see if the water rise that high and hope the Pirates don't find you.")
+    player1 = int(input("Please choose a option number. "))
+    if player1 == 3:
+        score +=1
+        print("")
+        print("Risky move but it paid off. Looks as if we are safe for now!")
+        print("")
+        print("On the cave walls, you notice different paint... ")
+        print("You can't believe it, behind each paint is a door")
+        print("the options are as follow:")
+        print("")
+        print("Option 1 - Red")
+        print("Option 2 - Blue")
+        print("Option 3 - Purple")
+        print("Option 4 - Yellow")
+        print("")
+        player1 = int(input("Please choose a option number. "))
+        if player1 == 4:
+            print("")
+            print("You found the treasure. Well Done! Let's get out of here!")
+            score += 10
+            print(f"You achieved a high score of {score}")
+        elif player1 == 1:
+            score += 1
+            print("")
+            print("It is just fire everywhere... Game Over!")
+            print(f"Your score is {score}")
+        elif player1 == 2:
+            score += 1
+            print("")
+            print("Oh no! You are being eaten by beasts! Game Over!")
+            print(f"Your score is {score}")
+        else:
+            score += -100
+            print("")
+            print("You are doomed! You are trapped forever! Game Over!")
+            print(f"Your score is {score}")
+    elif player1 == 2:
+        score += 1
+        print("")
+        print("Game Over - Pitates don't take prisoners!")
+        print(f"Your score is {score}")
+    else:
+        score += 1
+        print("")
+        print("Game Over - Trout don't mess around! You were no match for their attack")
+        print(f"Your score is {score}")
+
+else:
+    print("")
+    print("Game Over - You fell into a hole!")
+    print(f"Your score is {score}")
